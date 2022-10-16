@@ -18,7 +18,19 @@ public class Banner {
      * TODO: Modify this method to print a decorative banner, resized to fit the message
      */
     public void display() {
-        System.out.println(this.message);
+        System.out.println("_____________________________________________");
+        System.out.println("|                                            |");
+        System.out.println("|      ***********            **********     |");
+        System.out.println("|   *****************      ****************  |");
+        System.out.println("|  ********************  ******************* |");
+        System.out.println("|     ****** ~~~~~~~~~~~~~~~~~~~~~~~~ ****** |");
+        System.out.println("|      ****** ~  " + message + "  ~ ******       |");
+        System.out.println("|         ** ~~~~~~~~~~~~~~~~~~~~~~~~ **     |");
+        System.out.println("|           **************************       |");
+        System.out.println("|                ****************            |");
+        System.out.println("|                   **********               |");
+        System.out.println("|                       **                   |");
+        System.out.println("|____________________________________________|");
     }
 
     /* main method (for testing) */
