@@ -1,8 +1,7 @@
 /*
- * Shirt class (template)
- * Assignment 5: Bringing it All Together
- * @author R. Jordan Crouser + CSC120 (Fall '22))
- * @version 13 October 2022
+ * Prints shirt using ASCII art 
+ * @param none
+ * @return ASCII art of shirt with buttons and sleeves
  */
 public class Shirt {
 

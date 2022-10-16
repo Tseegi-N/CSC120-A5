@@ -1,11 +1,11 @@
-/*
- * Boot class (template)
- * Assignment 5: Bringing it All Together
- * @author R. Jordan Crouser + CSC120 (Fall '22))
- * @version 13 October 2022
+/**
+ * Prints boots using ASCII art 
+ * @param left/right to indicate which boot to draw
+ * @return ASCII art of boots(seperately)
  */
 public class Boot {
-  
+
+    /* Left/right boot */
     private String direction;
   
     /* Constructor */
@@ -18,7 +18,7 @@ public class Boot {
      */
     public void display() {
         if (this.direction.equals("left")) {
-          System.out.print("        |______|");
+          System.out.print("         |______|");
         } else if (this.direction.equals("right")) {
           System.out.print("|______|");
         } else {

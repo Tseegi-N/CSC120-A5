@@ -1,8 +1,7 @@
-/*
- * Banner class (template)
- * Assignment 5: Bringing it All Together
- * @author R. Jordan Crouser + CSC120 (Fall '22))
- * @version 13 October 2022
+/**
+ * Prints banner with message provided using ASCII art 
+ * @param string to recieve message
+ * @return ASCII art that depicts heart with a rectangular speech box
  */
 public class Banner {
     
@@ -15,7 +14,7 @@ public class Banner {
     }
 
     /*
-     * TODO: Modify this method to print a decorative banner, resized to fit the message
+     * Print a decorative banner, resized to fit the message
      */
     public void display() {
         System.out.println("_____________________________________________");
@@ -24,18 +23,32 @@ public class Banner {
         System.out.println("|   *****************      ****************  |");
         System.out.println("|  ********************  ******************* |");
         System.out.println("|     ****** ~~~~~~~~~~~~~~~~~~~~~~~~ ****** |");
-        System.out.println("|      ****** ~  " + message + "  ~ ******       |");
-        System.out.println("|         ** ~~~~~~~~~~~~~~~~~~~~~~~~ **     |");
+
+        //Message is fit depending on the character length
+        System.out.print("       ");
+        for (int i=30; message.length()<i; i=i-2){
+            System.out.print("*");
+        }
+        System.out.print(" ~ ");
+        System.out.print(message);
+        System.out.print(" ~ ");
+        for (int i=30; message.length()<i; i=i-2){
+            System.out.print("*");
+        }
+        
+        System.out.println("\n|         ** ~~~~~~~~~~~~~~~~~~~~~~~~ **     |");
         System.out.println("|           **************************       |");
         System.out.println("|                ****************            |");
         System.out.println("|                   **********               |");
         System.out.println("|                       **                   |");
-        System.out.println("|____________________________________________|");
+        System.out.println("|______________________   ___________________|");
+        System.out.println("                       | /");
+        System.out.println("                       |/");
     }
 
     /* main method (for testing) */
     public static void main(String[] args) {
-        Banner myBanner = new Banner("Hello world");
+        Banner myBanner = new Banner("Happy halloween 2022");
         myBanner.display();
     }
 }
